@@ -28,7 +28,7 @@ def tu_xuat_hien_nhieu_nhat(danh_sach_tu):
  
 def main():
     print("=" * 50)
-    print("     PHÂN TÍCH VÀ THỐNG KÊ VĂN BẢN")
+    print("PHÂN TÍCH VÀ THỐNG KÊ VĂN BẢN")
     print("=" * 50)
     print("Nhập đoạn văn bản (2-3 câu):")
     van_ban = input(">>> ").strip()
