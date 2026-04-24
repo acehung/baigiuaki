@@ -1,0 +1,7 @@
+KẾT QUẢ TRÒ CHƠI MINI HANGMAN
+===================================
+Thời điểm   : 24/04/2026 13:24:38
+Từ bí mật   : laptop
+Kết quả     : THẮNG 
+Thời gian   : 12.9 giây
+Lượt sai còn: 5/5
