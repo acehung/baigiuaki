@@ -2,7 +2,7 @@ import random
 import time
 import datetime
  
-DANH_SACH_TU = ["python", "apple", "river", "orange", "garden", "laptop"]
+DANH_SACH_TU = ["python", "apple", "river", "luong", "minh", "hung"]
 GIOI_HAN_SAI = 5
  
 def tao_hien_thi(tu_bi_mat, da_doan_dung):
@@ -22,7 +22,7 @@ def ghi_ket_qua(tu_bi_mat, thang, thoi_gian, luot_sai_con_lai):
  
 def main():
     print("=" * 45)
-    print("       TRÒ CHƠI ĐOÁN CHỮ CÁI 🎮")
+    print("TRÒ CHƠI ĐOÁN CHỮ CÁI ")
     print("=" * 45)
  
     # Chọn từ ngẫu nhiên
@@ -42,26 +42,26 @@ def main():
             break
  
         print(f"   Lượt sai: {luot_sai}/{GIOI_HAN_SAI}  |  Đã đoán sai: {sorted(da_doan_sai) or 'Chưa có'}")
-        chu_cai = input("   Nhập chữ cái: ").strip().lower()
+        chu_cai = input("Nhập chữ cái: ").strip().lower()
  
         # Kiểm tra hợp lệ
         if len(chu_cai) != 1 or not chu_cai.isalpha():
-            print("    Vui lòng nhập đúng 1 chữ cái!\n")
+            print("Vui lòng nhập đúng 1 chữ cái!\n")
             continue
  
         if chu_cai in da_doan_dung or chu_cai in da_doan_sai:
-            print("    Bạn đã đoán chữ này rồi!\n")
+            print("Bạn đã đoán chữ này rồi!\n")
             continue
  
         if chu_cai in tu_bi_mat:
             da_doan_dung.add(chu_cai)
-            print(f"   Đúng! Chữ '{chu_cai}' có trong từ.\n")
+            print(f"Đúng! Chữ '{chu_cai}' có trong từ.\n")
         else:
             da_doan_sai.add(chu_cai)
             luot_sai += 1
-            print(f"   Sai! Chữ '{chu_cai}' không có trong từ.\n")
+            print(f"Sai! Chữ '{chu_cai}' không có trong từ.\n")
  
-        print(f"    {tao_hien_thi(tu_bi_mat, da_doan_dung)}\n")
+        print(f" {tao_hien_thi(tu_bi_mat, da_doan_dung)}\n")
  
     ket_thuc = time.time()
     thoi_gian = ket_thuc - bat_dau
@@ -74,8 +74,8 @@ def main():
     else:
         print(f"  THUA RỒI! Từ bí mật là: '{tu_bi_mat}'")
  
-    print(f"⏱   Thời gian hoàn thành: {thoi_gian:.1f} giây")
-    print(f"🔢  Lượt sai còn lại: {luot_sai_con_lai}/{GIOI_HAN_SAI}")
+    print(f"Thời gian hoàn thành: {thoi_gian:.1f} giây")
+    print(f"Lượt sai còn lại: {luot_sai_con_lai}/{GIOI_HAN_SAI}")
     print("=" * 45)
  
     # Ghi kết quả vào file
