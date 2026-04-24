@@ -34,7 +34,7 @@ def main():
     van_ban = input(">>> ").strip()
  
     if not van_ban:
-        print("⚠  Bạn chưa nhập văn bản.")
+        print(" Bạn chưa nhập văn bản.")
         return
  
    
@@ -50,9 +50,9 @@ def main():
     print("\n" + "=" * 50)
     print("  KẾT QUẢ PHÂN TÍCH:")
     print("=" * 50)
-    print(f"   Danh sách các từ : {danh_sach_tu}")
-    print(f"   Tổng số từ        : {tong_so_tu} từ")
-    print(f"   Từ xuất hiện nhiều nhất: '{tu_nhieu_nhat}' ({so_lan} lần)")
+    print(f"Danh sách các từ : {danh_sach_tu}")
+    print(f"Tổng số từ        : {tong_so_tu} từ")
+    print(f"Từ xuất hiện nhiều nhất: '{tu_nhieu_nhat}' ({so_lan} lần)")
     print("=" * 50)
  
 if __name__ == "__main__":
