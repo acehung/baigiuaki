@@ -1,7 +1,7 @@
 def main():
     danh_sach = []
     print("=" * 45)
-    print("       ỨNG DỤNG TO-DO LIST")
+    print("ỨNG DỤNG TO-DO LIST")
     print("=" * 45)
     print("Nhập các công việc cần làm (gõ 'xong' để kết thúc):\n")
  
@@ -13,7 +13,7 @@ def main():
             danh_sach.append(cong_viec)
  
     if not danh_sach:
-        print("\n⚠  Bạn chưa nhập công việc nào.")
+        print("\n Bạn chưa nhập công việc nào.")
         return
  
     # Hiển thị danh sách ra màn hình
