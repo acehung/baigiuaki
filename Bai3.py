@@ -1,5 +1,5 @@
 def tinh_bmi(can_nang, chieu_cao):
-    """Tính chỉ số BMI. Ném ZeroDivisionError nếu chiều cao = 0."""
+    """Tính chỉ số BMI nếu chiều cao = 0."""
     if chieu_cao == 0:
         raise ZeroDivisionError("Chiều cao không được bằng 0!")
     bmi = can_nang / (chieu_cao ** 2)
@@ -8,15 +8,15 @@ def tinh_bmi(can_nang, chieu_cao):
 def phan_loai_bmi(bmi):
     """Phân loại kết quả BMI."""
     if bmi < 18.5:
-        return "GẦY", "⚠ "
+        return "GẦY", " "
     elif bmi <= 24.9:
         return "BÌNH THƯỜNG", ""
     else:
-        return "THỪA CÂN", "⚠ "
+        return "THỪA CÂN", " "
  
 def main():
     print("=" * 45)
-    print("      CÔNG CỤ TÍNH CHỈ SỐ BMI")
+    print(" CÔNG CỤ TÍNH CHỈ SỐ BMI")
     print("=" * 45)
  
     try:
